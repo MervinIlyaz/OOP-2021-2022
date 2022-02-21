@@ -55,8 +55,20 @@ public class Arrays extends PApplet{
 
     }
     public void draw(){
-
-
+        background(0);
+        colorMode(HSB);
+        float w = width / (float)rainfall.length;
+        noStroke();
+        for (int i = 0; i < rainfall.length; i++)
+        {
+            float x = map(i, 0, rainfall.length, 0, width);
+            int c = (int)map(i, 0, rainfall.length, 0, 255);
+            fill(c, 255, 255);
+            float h = map(rainfall[i], 0, rainfall[maxIndex], 0, -height);
+            rect(x, height, w, -rainfall[i]);
+            textAlign(CENTER, CENTER);
+            text(months, x + (w/2), height - 50);
+        }
     }
     
 }
