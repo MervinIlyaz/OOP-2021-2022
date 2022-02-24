@@ -1,5 +1,7 @@
 package ie.tudublin;
 
+
+
 public class Main
 {
     public static void BugZap()
@@ -20,7 +22,7 @@ public class Main
         processing.core.PApplet.runSketch( a, new Loops());
     }
 
-    public static void Arrays()
+    public static void arrays()
 	{
 		String[] a = {"MAIN"};
         processing.core.PApplet.runSketch( a, new Arrays());
@@ -51,7 +53,7 @@ public class Main
     }
     public static void main(String[] args)
     {
-        Arrays();
+        arrays();
 
         // Tara Misty
         // Tara Tara
