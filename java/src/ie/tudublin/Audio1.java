@@ -137,7 +137,20 @@ public class Audio1 extends PApplet
             circle(cx, cy, r);
         case 4:
             background(0);
-            
+            strokeWeight(2);
+            for(int i = 0 ; i < ab.size() ; i +=10)
+                {
+                    //float c = map(ab.get(i), -1, 1, 0, 255);
+                    float cc = map(i, 0, ab.size(), 0, 255);
+                    stroke(cc, 255, 255);
+                    float f = lerpedBuffer[i] * halfH * 4.0f;
+                    line(i, halfH + f, i, halfH - f);  
+                    fill(cc);
+                    circle(i, halfH + f, 5);
+                    circle(i, halfH - f, 5);
+
+                }
+                break;
         }
         
 
