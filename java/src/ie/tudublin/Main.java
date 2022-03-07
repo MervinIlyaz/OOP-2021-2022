@@ -28,6 +28,7 @@ public class Main
         processing.core.PApplet.runSketch( a, new Arrays());
     }
 
+
     public static void audio1()
 	{
 		String[] a = {"MAIN"};
@@ -59,6 +60,7 @@ public class Main
     }
     public static void main(String[] args)
     {
+
         audio1();
 
         // Tara Misty
