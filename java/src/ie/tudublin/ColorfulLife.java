@@ -122,7 +122,7 @@ public class ColorfulLife extends PApplet {
 
     }
 
-    private void printBoard(boolean[][] board)
+    private void fhmprintBoard(boolean[][] board)
     {
         for(int row = 0 ; row < size ; row ++)
         {
