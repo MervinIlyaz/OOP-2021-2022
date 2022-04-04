@@ -8,9 +8,8 @@ import processing.data.TableRow;
 
 public class StarMap extends PApplet {
 
-
     ArrayList<Star> stars = new ArrayList<Star>();
-
+    
     public float border;
 
     void drawGrid()
@@ -24,8 +23,8 @@ public class StarMap extends PApplet {
             line(x, border, x, height - border);
             line(border, x, width - border, x);
             fill(255);
-            text(i, x, border * 0.4f);
-            text(i, border * 0.4f, x);
+            text(i, x, border * 0.5f);
+            text(i, border * 0.5f, x);
         }
     }
 
@@ -61,6 +60,8 @@ public class StarMap extends PApplet {
         colorMode(RGB);
         loadStars();
         printStars();
+
+        border = width * 0.1f;
     }
 
     public void drawStars()

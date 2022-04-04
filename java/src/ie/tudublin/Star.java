@@ -1,13 +1,13 @@
 package ie.tudublin;
 
-import processing.data.TableRow;
 import processing.core.PApplet;
+import processing.data.TableRow;
 
-public class Star {
-    
+public class Star
+{
     private boolean hab;
     private String displayName;
-    public float distance;
+    private float distance;
     private float xG;
     private float yG;
     private float zG;
@@ -43,7 +43,7 @@ public class Star {
         this.zG = zG;
         this.absMag = absMag;
     }
-    
+
     public boolean isHab() {
         return hab;
     }
@@ -92,6 +92,7 @@ public class Star {
         float x = PApplet.map(xG, -5, 5, pa.border, pa.width - pa.border);
         float y = PApplet.map(yG, -5, 5, pa.border, pa.height - pa.border);
 
+        
         pa.stroke(255, 255, 0);
         pa.line(x, y -5, x, y + 5);
         pa.line(x-5, y, x + 5, y);
@@ -103,6 +104,4 @@ public class Star {
         pa.textAlign(PApplet.LEFT, PApplet.CENTER);
         pa.text(displayName, x + 20, y);
     }
-
-
 }
