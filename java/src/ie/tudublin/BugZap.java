@@ -29,7 +29,7 @@ public class BugZap extends PApplet {
 
 	void resetBug() {
 		bugX = random(halfBugWidth, width - halfBugWidth);
-		bugY = 50;
+		bugY = 80;
 	}
 
 	void drawBug(float x, float y) {
