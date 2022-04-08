@@ -65,6 +65,13 @@ public class Main
         processing.core.PApplet.runSketch( a, new YASC());
     }
 
+    public void UI()
+	{
+		String[] a = {"MAIN"};
+        processing.core.PApplet.runSketch( a, new UserInterface());
+		
+	}
+
     public void cat()
     {
         System.out.println("Hello world");
@@ -90,7 +97,8 @@ public class Main
     }
     public static void main(String[] args)
     {
-        YASC();
+        Main main = new Main();
+		main.UI();
 
         // Tara Misty
         // Tara Tara
