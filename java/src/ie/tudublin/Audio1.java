@@ -46,7 +46,7 @@ public class Audio1 extends PApplet
         // Uncomment this to use the microphone
         // ai = minim.getLineIn(Minim.MONO, width, 44100, 16);
         // ab = ai.mix; 
-        ap = minim.loadFile("heroplanet.mp3", 1024);
+        ap = minim.loadFile("Sandstorm.wav", 1024);
         ap.play();
         ab = ap.mix;
         colorMode(HSB);
@@ -127,6 +127,7 @@ public class Audio1 extends PApplet
                         py = y;
                     }
             }
+            break;
         case 3:
             background(0);
             strokeWeight(2);
@@ -135,6 +136,8 @@ public class Audio1 extends PApplet
             float c = map(smoothedAmplitude, 0, 0.5f, 0, 255);
             stroke(c, 255, 255);
             circle(cx, cy, r);
+
+            break;
         case 4:
         
             background(0);
