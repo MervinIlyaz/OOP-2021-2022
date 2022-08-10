@@ -4,10 +4,10 @@ package ie.tudublin;
 
 public class Main
 {
-    public static void BugZap()
+    public static void helloProcessing()
 	{
 		String[] a = {"MAIN"};
-        processing.core.PApplet.runSketch( a, new BugZap());
+        processing.core.PApplet.runSketch( a, new HelloProcessing());
     }
 
     public static void starMap()
@@ -59,12 +59,6 @@ public class Main
         processing.core.PApplet.runSketch( a, new Audio2());
     }
 
-    public static void audio3()
-	{
-		String[] a = {"MAIN"};
-        processing.core.PApplet.runSketch( a, new Audio3());
-    }
-
     public static void colorfulLife()
 	{
 		String[] a = {"MAIN"};
@@ -75,18 +69,6 @@ public class Main
 	{
 		String[] a = {"MAIN"};
         processing.core.PApplet.runSketch( a, new YASC());
-    }
-
-    public static void PurpleRain()
-	{
-		String[] a = {"MAIN"};
-        processing.core.PApplet.runSketch( a, new PurpleRain());
-    }
-
-    public static void Drop()
-	{
-		String[] a = {"MAIN"};
-        processing.core.PApplet.runSketch( a, new Drop());
     }
 
     public void cat()
