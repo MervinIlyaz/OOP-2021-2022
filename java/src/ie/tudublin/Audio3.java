@@ -5,7 +5,7 @@ import ddf.minim.AudioInput;
 import ddf.minim.AudioPlayer;
 import ddf.minim.Minim;
 import processing.core.PApplet;
-
+ 
 public class Audio3 extends PApplet
 {
     Minim minim;
